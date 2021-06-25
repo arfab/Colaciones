@@ -1,0 +1,132 @@
+﻿@model IEnumerable<Colaciones.Models.Producto>
+@{ ViewData["Title"] = "Colaciones"; }
+
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+<script>
+    @{
+        var _user_id = @HttpContextAccessor.HttpContext.Session.GetString("USER_ID");
+        var _perfil_id = @HttpContextAccessor.HttpContext.Session.GetInt32("PERFIL_ID");
+
+        var categoria_id = (@HttpContextAccessor.HttpContext.Session.GetInt32("CATEGORIA_ID"));
+
+        var colacion = (@HttpContextAccessor.HttpContext.Session.GetInt32("COLACION")==1?true:false);
+        var desayuno = (@HttpContextAccessor.HttpContext.Session.GetInt32("DESAYUNO")==1?true:false);
+        var postre = (@HttpContextAccessor.HttpContext.Session.GetInt32("POSTRE")==1?true:false);
+        var grasas_trans = (@HttpContextAccessor.HttpContext.Session.GetInt32("GRASAS_TRANS")==1?true:false);
+        var ocasional = (@HttpContextAccessor.HttpContext.Session.GetInt32("OCASIONAL")==1?true:false);
+        var reemplazo = (@HttpContextAccessor.HttpContext.Session.GetInt32("REEMPLAZO")==1?true:false);
+
+      }
+
+
+</script>
+
+<h3>Colaciones</h3>
+<form asp-action="Filtro">
+    <div class="form-group">
+
+        <label for="Categoria" class="control-lable">Categoría</label>
+        <select id="categoria_id" name="categoria_id" for="categoria_id" asp-items="@(new SelectList(@ViewBag.ListofCategorias,"id", "descripcion",categoria_id))" class="custom-select" >
+            <option value=-1>Todas las colaciones</option>
+        </select>
+
+        @if (colacion)
+         {
+        @Html.CheckBox("chkcolacion", new { @checked = true })
+         }
+         else
+         {
+        @Html.CheckBox("chkcolacion")
+         }
+        <span>Colación</span>
+
+        @if (desayuno)
+         {
+        @Html.CheckBox("chkdesayuno", new { @checked = true })
+         }
+         else
+         {
+        @Html.CheckBox("chkdesayuno")
+         }
+        <span>Desayuno/Merienda</span>
+
+        @if (postre)
+         {
+        @Html.CheckBox("chkpostre", new { @checked = true })
+         }
+         else
+         {
+        @Html.CheckBox("chkpostre")
+         }
+        <span>Postre</span>
+
+        @if (grasas_trans)
+         {
+        @Html.CheckBox("chkgrasas_trans", new { @checked = true })
+         }
+         else
+         {
+        @Html.CheckBox("chkgrasas_trans")
+         }
+        <span>Grasas Trans</span>
+
+        @if (ocasional)
+         {
+        @Html.CheckBox("chkocasional", new { @checked = true })
+         }
+         else
+         {
+        @Html.CheckBox("chkocasional")
+         }
+        <span>Ocasional</span>
+
+        @if (reemplazo)
+        {
+        @Html.CheckBox("chkreemplazo", new { @checked = true })
+         }
+         else
+         {
+        @Html.CheckBox("chkreemplazo")
+         }
+        <span>Reemplazo</span>
+
+        <label for="txtBusqueda">Buscar</label>
+        <input type="text" name="txtBusqueda" id="txtBusqueda" />
+        <input type="submit" value="OK" class="btn btn-success btn-sm" />
+
+    </div>
+</form>
+
+<div class="table-responsive">
+    <table class="dataTabla">
+        <thead>
+            <tr>
+                <th>Producto</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    <a href="@Html.DisplayFor(model => item.descripcion)" target="_blank"><img src="@Url.Content("/imagenes/" + item.id + ".jpg")" title="@Html.DisplayFor(model => item.descripcion)" width="100px" height="100px"> </img></a><br />
+                    @Html.DisplayFor(model => item.descripcion)<br />
+                    Pocion: @Html.DisplayFor(model => item.porcion)<br />
+                    Azúcar: @Html.DisplayFor(model => item.azucar)
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+@if (ViewBag.Message != null)
+{
+<script type="text/javascript">
+	window.onload = function () {
+		alert('@Html.Raw(ViewBag.Message)');
+	};
+</script>
+}
+

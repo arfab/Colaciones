@@ -1,0 +1,138 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.90" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Imagenes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Imagenes\1.jpg" />
+    <None Include="wwwroot\Imagenes\10.jpg" />
+    <None Include="wwwroot\Imagenes\100.jpg" />
+    <None Include="wwwroot\Imagenes\101.jpg" />
+    <None Include="wwwroot\Imagenes\102.jpg" />
+    <None Include="wwwroot\Imagenes\103.jpg" />
+    <None Include="wwwroot\Imagenes\104.jpg" />
+    <None Include="wwwroot\Imagenes\105.jpg" />
+    <None Include="wwwroot\Imagenes\106.jpg" />
+    <None Include="wwwroot\Imagenes\107.jpg" />
+    <None Include="wwwroot\Imagenes\109.jpg" />
+    <None Include="wwwroot\Imagenes\11.jpg" />
+    <None Include="wwwroot\Imagenes\111.jpg" />
+    <None Include="wwwroot\Imagenes\112.jpg" />
+    <None Include="wwwroot\Imagenes\114.jpg" />
+    <None Include="wwwroot\Imagenes\117.jpg" />
+    <None Include="wwwroot\Imagenes\118.jpg" />
+    <None Include="wwwroot\Imagenes\119.jpg" />
+    <None Include="wwwroot\Imagenes\12.jpg" />
+    <None Include="wwwroot\Imagenes\120.jpg" />
+    <None Include="wwwroot\Imagenes\121.jpg" />
+    <None Include="wwwroot\Imagenes\122.jpg" />
+    <None Include="wwwroot\Imagenes\123.jpg" />
+    <None Include="wwwroot\Imagenes\124.jpg" />
+    <None Include="wwwroot\Imagenes\125.jpg" />
+    <None Include="wwwroot\Imagenes\126.jpg" />
+    <None Include="wwwroot\Imagenes\13.jpg" />
+    <None Include="wwwroot\Imagenes\14.jpg" />
+    <None Include="wwwroot\Imagenes\15.jpg" />
+    <None Include="wwwroot\Imagenes\16.jpg" />
+    <None Include="wwwroot\Imagenes\17.jpg" />
+    <None Include="wwwroot\Imagenes\18.jpg" />
+    <None Include="wwwroot\Imagenes\19.jpg" />
+    <None Include="wwwroot\Imagenes\2.jpg" />
+    <None Include="wwwroot\Imagenes\20.jpg" />
+    <None Include="wwwroot\Imagenes\21.jpg" />
+    <None Include="wwwroot\Imagenes\22.jpg" />
+    <None Include="wwwroot\Imagenes\23.jpg" />
+    <None Include="wwwroot\Imagenes\24.jpg" />
+    <None Include="wwwroot\Imagenes\25.jpg" />
+    <None Include="wwwroot\Imagenes\26.jpg" />
+    <None Include="wwwroot\Imagenes\27.jpg" />
+    <None Include="wwwroot\Imagenes\28.jpg" />
+    <None Include="wwwroot\Imagenes\29.jpg" />
+    <None Include="wwwroot\Imagenes\3.jpg" />
+    <None Include="wwwroot\Imagenes\31.jpg" />
+    <None Include="wwwroot\Imagenes\32.jpg" />
+    <None Include="wwwroot\Imagenes\33.jpg" />
+    <None Include="wwwroot\Imagenes\34.jpg" />
+    <None Include="wwwroot\Imagenes\35.jpg" />
+    <None Include="wwwroot\Imagenes\36.jpg" />
+    <None Include="wwwroot\Imagenes\36b.jpg" />
+    <None Include="wwwroot\Imagenes\37.jpg" />
+    <None Include="wwwroot\Imagenes\38.jpg" />
+    <None Include="wwwroot\Imagenes\39.jpg" />
+    <None Include="wwwroot\Imagenes\4.jpg" />
+    <None Include="wwwroot\Imagenes\40.jpg" />
+    <None Include="wwwroot\Imagenes\41.jpg" />
+    <None Include="wwwroot\Imagenes\42.jpg" />
+    <None Include="wwwroot\Imagenes\43.jpg" />
+    <None Include="wwwroot\Imagenes\44.jpg" />
+    <None Include="wwwroot\Imagenes\45.jpg" />
+    <None Include="wwwroot\Imagenes\46.jpg" />
+    <None Include="wwwroot\Imagenes\47.jpg" />
+    <None Include="wwwroot\Imagenes\48.JPG" />
+    <None Include="wwwroot\Imagenes\49.jpg" />
+    <None Include="wwwroot\Imagenes\5.jpg" />
+    <None Include="wwwroot\Imagenes\50.jpg" />
+    <None Include="wwwroot\Imagenes\51.jpg" />
+    <None Include="wwwroot\Imagenes\52.jpg" />
+    <None Include="wwwroot\Imagenes\53.jpg" />
+    <None Include="wwwroot\Imagenes\54.jpg" />
+    <None Include="wwwroot\Imagenes\55.jpg" />
+    <None Include="wwwroot\Imagenes\56.jpg" />
+    <None Include="wwwroot\Imagenes\57.jpg" />
+    <None Include="wwwroot\Imagenes\58.jpg" />
+    <None Include="wwwroot\Imagenes\59.JPG" />
+    <None Include="wwwroot\Imagenes\6.jpg" />
+    <None Include="wwwroot\Imagenes\60.jpg" />
+    <None Include="wwwroot\Imagenes\61.jpg" />
+    <None Include="wwwroot\Imagenes\62.jpg" />
+    <None Include="wwwroot\Imagenes\63.jpg" />
+    <None Include="wwwroot\Imagenes\64.jpg" />
+    <None Include="wwwroot\Imagenes\65.jpg" />
+    <None Include="wwwroot\Imagenes\66.jpg" />
+    <None Include="wwwroot\Imagenes\67.jpg" />
+    <None Include="wwwroot\Imagenes\68.jpg" />
+    <None Include="wwwroot\Imagenes\69.jpg" />
+    <None Include="wwwroot\Imagenes\7.jpg" />
+    <None Include="wwwroot\Imagenes\70.jpg" />
+    <None Include="wwwroot\Imagenes\71.jpg" />
+    <None Include="wwwroot\Imagenes\72.jpg" />
+    <None Include="wwwroot\Imagenes\73.jpg" />
+    <None Include="wwwroot\Imagenes\74.jpg" />
+    <None Include="wwwroot\Imagenes\75.jpg" />
+    <None Include="wwwroot\Imagenes\76.jpg" />
+    <None Include="wwwroot\Imagenes\77.jpg" />
+    <None Include="wwwroot\Imagenes\78.jpg" />
+    <None Include="wwwroot\Imagenes\79.jpg" />
+    <None Include="wwwroot\Imagenes\80.jpg" />
+    <None Include="wwwroot\Imagenes\81.jpg" />
+    <None Include="wwwroot\Imagenes\82.jpg" />
+    <None Include="wwwroot\Imagenes\83.jpg" />
+    <None Include="wwwroot\Imagenes\84.jpg" />
+    <None Include="wwwroot\Imagenes\85.jpg" />
+    <None Include="wwwroot\Imagenes\86.jpg" />
+    <None Include="wwwroot\Imagenes\87.jpg" />
+    <None Include="wwwroot\Imagenes\88.jpg" />
+    <None Include="wwwroot\Imagenes\89.jpg" />
+    <None Include="wwwroot\Imagenes\9.jpg" />
+    <None Include="wwwroot\Imagenes\90.jpg" />
+    <None Include="wwwroot\Imagenes\91.jpg" />
+    <None Include="wwwroot\Imagenes\92.jpg" />
+    <None Include="wwwroot\Imagenes\93.jpg" />
+    <None Include="wwwroot\Imagenes\94.jpg" />
+    <None Include="wwwroot\Imagenes\95.jpg" />
+    <None Include="wwwroot\Imagenes\98.jpg" />
+    <None Include="wwwroot\Imagenes\99.jpg" />
+  </ItemGroup>
+
+</Project>
